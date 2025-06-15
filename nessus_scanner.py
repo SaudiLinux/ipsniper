@@ -10,7 +10,7 @@ class NessusScanner:
     def __init__(self, url, access_key, secret_key):
         self.url = url.rstrip('/')
         self.headers = {
-            'X-ApiKeys': f'accessKey={access_key}; secretKey={secret_key}',
+            'X-ApiKeys': f'accessKey={accesskey}; secretKey={secret_key}',
             'Content-Type': 'application/json'
         }
 
@@ -140,8 +140,8 @@ class NessusScanner:
 def main():
     scanner = NessusScanner(
         url='https://localhost:8834',  # تغيير هذا إلى عنوان خادم Nessus الخاص بك
-        access_key='your-access-key',  # تغيير هذا إلى مفتاح الوصول الخاص بك
-        secret_key='your-secret-key'   # تغيير هذا إلى المفتاح السري الخاص بك
+        access_key='b54601421e2dba7312dd176a3523b98e17817a45ac27b26618128e4193736e50',  # تغيير هذا إلى مفتاح الوصول الخاص بك
+        secret_key='4c93d2171a37e0c198544a715b7e2f82713bca82926e43bc24ee5fe94801443e'   # تغيير هذا إلى المفتاح السري الخاص بك
     )
 
     scanner.print_banner()

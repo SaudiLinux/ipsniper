@@ -22,17 +22,9 @@ pip install requests colorama
 
 1. قم بتشغيل Nessus وافتح المتصفح على العنوان: https://localhost:8834
 
-2. قم بإنشاء حساب وتسجيل الدخول
-
-3. احصل على مفاتيح API:
-   - اذهب إلى Settings > My Account
-   - اضغط على Generate API Keys
-   - احفظ مفتاح الوصول (Access Key) والمفتاح السري (Secret Key)
-
-4. قم بتعديل المتغيرات في ملف nessus_scanner.py:
-   - url: عنوان خادم Nessus (الافتراضي: https://localhost:8834)
-   - access_key: مفتاح الوصول الخاص بك
-   - secret_key: المفتاح السري الخاص بك
+2. مفاتيح API متوفرة بالفعل في السكربت:
+   - مفتاح الوصول (Access Key): 3baad3d84d1860efa70ac39259a30067acaeff7398efe32f7ca78617f5eff153
+   - المفتاح السري (Secret Key): 9765f01c92d0a811afc3f0a7cb43b5b19f91c4ef343a702199b56be3ac2f6f5c
 
 ## تشغيل الأداة
 
@@ -40,7 +32,7 @@ pip install requests colorama
 
 2. انتقل إلى مجلد الأداة:
    ```
-   cd path/to/tool/directory
+   cd c:\Users\Dell\Desktop\code
    ```
 
 3. قم بتشغيل الأداة:
@@ -61,5 +53,4 @@ pip install requests colorama
 ## ملاحظات هامة
 
 - تأكد من تشغيل خادم Nessus قبل تشغيل الأداة
-- تأكد من صحة مفاتيح API
 - النتائج تُحفظ تلقائياً في ملف JSON باسم: nessus_scan_results_[التاريخ_الوقت].json
